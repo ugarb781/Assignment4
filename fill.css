@@ -1,0 +1,455 @@
+body{
+  margin: 0;
+}
+
+
+
+.f-stem {
+  position: absolute;
+  top: 20%;
+  left: 1px;
+  width: 80px;
+  height: 400px;
+  background-color: white;
+  border-top-left-radius: 40px;
+}
+
+.f-stem:hover{
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.f-hook {
+    position: absolute;
+    left: 1px;
+    height:200px;
+    width:400px;
+    border-radius: 400px 400px 0 0;
+    background-color: white;
+}
+
+.f-hook:hover{
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.f-hook-neg{
+  position: absolute;
+  top: 16%;
+  left: 4.8%;
+  height:100px;
+  width:200px;
+  border-radius: 200px 200px 0 0;
+  background-color: white;
+}
+
+.f-crossbar{
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  width: 150px;
+  height: 90px;
+  background-color: white;
+}
+
+.f-crossbar:hover{
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+
+.crop{
+  position:absolute;
+  background-color: white;
+  width:20px;
+  height: 600px;
+}
+
+.I-stem{
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  width: 80px;
+  height: 315px;
+  background-color: white;
+}
+
+.I-stem:hover{
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.L-stem{
+  position: absolute;
+  top: 20.4%;
+  left: 30%;
+  width: 80px;
+  height: 400px;
+  background-color: white;
+}
+
+.L-stem:hover{
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+#L-stem2{
+  left: 40%;
+}
+
+.blank{
+  position: relative;
+  top: 600px;
+  border-bottom: 10px solid black;
+  margin-right: 40%;
+}
+
+.period{
+  position:absolute;
+  top: 65%;
+  left: 58%;
+  height: 30px;
+  width: 30px;
+  background-color: lightblue;
+  border-radius: 100%;
+}
+
+.arrow{
+  position: relative;
+  top: 630px;
+  left: 50px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid lightblue;
+  animation-name: pointing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+#indicators2{
+  position: absolute;
+  left: 250px;
+  top:50px;
+}
+
+#indicators3{
+  position: absolute;
+  left: 300px;
+  top: 1px;
+}
+
+@keyframes reveal {
+  from{
+  visibility: hidden;
+  }
+  to{
+    background-color: lightblue;
+  }
+}
+
+@keyframes pointing{
+  from{
+    top: 670px;
+
+  }
+  to{
+    top: 630px;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+  .f-stem {
+    position: absolute;
+    top: 540px;;
+    left: 1px;
+    width: 20px;
+    height: 100px;
+    background-color: white;
+    border-top-left-radius: 10px;
+  }
+  .crop{
+    visibility: hidden;
+  }
+  .f-hook{
+    position: absolute;
+    top: 500px;
+    left: 1px;
+    height:50px;
+    width:100px;
+    border-radius: 100px 100px 0 0;
+    background-color: white;
+  }
+  .f-hook-neg{
+    position: absolute;
+    top: 530px;
+    left: 23px;
+    height:25px;
+    width:50px;
+    border-radius: 50px 50px 0 0;
+    background-color: white;
+  }
+  .f-crossbar{
+    position: absolute;
+    top: 570px;
+    left: 23px;
+    width: 27.5px;
+    height: 22.5px;
+    background-color: white;
+  }
+  .I-stem{
+    position: absolute;
+    top: 570px;
+    left: 15%;
+    width: 20px;
+    height: 70px;
+    background-color: white;
+  }
+  .L-stem{
+    position: absolute;
+    top: 540px;
+    left: 25%;
+    width: 20px;
+    height: 100px;
+    background-color: white;
+  }
+  #L-stem2{
+    left: 34%;
+  }
+
+  .period{
+    position:absolute;
+    top: 68%;
+    left: 58%;
+    height: 20px;
+    width: 20px;
+    background-color: lightblue;
+    border-radius: 100%;
+  }
+  .arrow{
+    position: relative;
+    top: 630px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid lightblue;
+    animation-name: pointing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+
+  #indicators2{
+    position: absolute;
+    left: 80px;
+    top:49px;
+  }
+
+  #indicators3{
+    position: absolute;
+    left: 100px;
+    top: 1px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: white;
+  }
+  .f-stem {
+    position: absolute;
+    top: 20%;
+    left: 1px;
+    width: 80px;
+    height: 400px;
+    background-color: white;
+    border-top-left-radius: 40px;
+  }
+
+  .f-stem:hover{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+  .f-hook {
+      position: absolute;
+      left: 1px;
+      top: 10px;
+      height:200px;
+      width:400px;
+      border-radius: 400px 400px 0 0;
+      background-color: white;
+  }
+
+  .f-hook:hover{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+  .f-hook-neg{
+    position: absolute;
+    top: 14%;
+    left: 80.5px;
+    height:100px;
+    width:200px;
+    border-radius: 200px 200px 0 0;
+    background-color: white;
+  }
+
+  .f-crossbar{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    width: 150px;
+    height: 90px;
+    background-color: white;
+  }
+
+  .f-crossbar:hover{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+
+
+  .crop{
+    position:absolute;
+    background-color: white;
+    width:20px;
+    height: 600px;
+  }
+
+  .I-stem{
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 80px;
+    height: 315px;
+    background-color: white;
+  }
+
+  .I-stem:hover{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+  .L-stem{
+    position: absolute;
+    top: 20.4%;
+    left: 30%;
+    width: 80px;
+    height: 400px;
+    background-color: white;
+  }
+
+  .L-stem:hover{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+
+  #L-stem2{
+    left: 40%;
+  }
+
+  .blank{
+    position: relative;
+    top: 600px;
+    border-bottom: 10px solid black;
+    margin-right: 40%;
+  }
+
+  .period{
+    position:absolute;
+    top: 65%;
+    left: 58%;
+    height: 30px;
+    width: 30px;
+    background-color: lightblue;
+    border-radius: 100%;
+  }
+
+  .arrow{
+    position: relative;
+    top: 630px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid lightblue;
+    animation-name: pointing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+  #indicators2{
+    position: absolute;
+    left: 250px;
+    top:50px;
+  }
+
+  #indicators3{
+    position: absolute;
+    left: 300px;
+    top: 1px;
+  }
+
+  @keyframes reveal {
+    from{
+    visibility: hidden;
+    }
+    to{
+      background-color: lightblue;
+    }
+  }
+
+  @keyframes pointing{
+    from{
+      top: 670px;
+
+    }
+    to{
+      top: 630px;
+    }
+  }
+}
